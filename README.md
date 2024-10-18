@@ -1,4 +1,4 @@
-# Weather Applicatio
+# Weather Application
 
 ## Description
 
