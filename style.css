@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #489dbe;
+}
+
+.container{
+    background-color: white;
+    color: black;
+    padding: 2rem;
+    width: 50%;
+    margin: 2rem auto;
+    border-radius: 10px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input{
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    outline: none;
+    padding: 0.5rem 2.5rem;
+    border-radius: 5px;
+    width: 400px;
+}
+
+input::placeholder{
+    color: white;
+}
+
+.search{
+    position: relative;
+}
+
+.search i{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 13px;
+    color: white;
+}
+
+.main{
+    text-align: center;
+    margin: 3rem;
+}
+
+.date-time{
+    margin-bottom: 2rem;
+    font-size: 14px;
+}
+
+.forecast{
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+}
+
+.icon img{
+    width: 100px;
+    filter: drop-shadow(2px 4px 6px black);
+    -webkit-filter: drop-shadow(2px 4px 6px black);
+}
+
+.temp{
+    font-size: 1.75rem;
+}
+
+.min-max{
+    display: flex;
+    justify-content: center;
+}
+
+.min-max p{
+    font-size: 14px;
+    margin: 0.5rem;
+}
+
+.info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    margin-top: 3rem;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(245, 228, 197);
+    border-radius: 10px;
+    gap: 1rem;
+}
+
+.card i{
+    font-size: 1.5rem;
+}
+
+.card p{
+    font-size: 14px;
+}
+
+@media (max-width: 936px){
+    .container{
+        width: 90%;
+    }
+    .header{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 400px){
+    .info{
+        grid-template-columns: none;
+    }
+}
